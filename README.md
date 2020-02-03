@@ -6,6 +6,20 @@
 
 * nodejs [未安装可参考](https://herberthe.gitee.io/2020/01/26/Nodejs%E5%AE%89%E8%A3%85%E8%8B%A5%E5%B9%B2%E9%97%AE%E9%A2%98%E9%81%BF%E5%9D%91/)
 
+> 关于electron的镜像，electron7.x之后需要设置单独的镜像，不然会安装报错；根据官方文档，中国地区镜像为: `https://cdn.npm.taobao.org/dist/electron/`
+
+在Windows的环境下命令为:
+
+```shell
+npm config set ELECTRON_MIRROR="https://cdn.npm.taobao.org/dist/electron/"
+
+# 验证设置
+npm config ls
+
+# 成功配置输出
+ELECTRON_MIRROR="https://cdn.npm.taobao.org/dist/electron/"
+```
+
 ## 快速使用
 
 * `clone` 仓库
