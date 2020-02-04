@@ -2,6 +2,8 @@ import React from "react";
 import logo from "./logo.svg";
 import { Button } from "antd";
 import { Chart, Geom, Axis, Tooltip, Legend } from "bizcharts";
+// 引入示例组件
+import ComponentName from './components/ComponentName'
 import "./App.css";
 
 function App() {
@@ -50,7 +52,10 @@ function App() {
         <p>
           Edit <code> src / App.js </code> and save to reload.
         </p>
-
+        {/* 下面组件调用会在控制台报错: Warning: Failed prop type: The prop `name` is marked as required in `ComponentName`, but its value is `undefined`. */}
+        {/* <ComponentName num={10} /> */}
+        {/* 正确用法需要name属性，并且为string类型，num参数可选默认值为零 */}
+        <ComponentName name='Hello World'/>
         <Chart width={600} height={400} data={data} scale={cols}>
           <Axis name="genre" title />
           <Axis name="sold" title />

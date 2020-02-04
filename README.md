@@ -20,6 +20,10 @@ npm config ls
 ELECTRON_MIRROR="https://cdn.npm.taobao.org/dist/electron/"
 ```
 
+## 新增更新
+
+* 2020/2/4新增: `prop-types`进行对组件`props`的类型检查，示例参考`/src/components/ComponentsName.js`
+
 ## 快速使用
 
 * `clone` 仓库
