@@ -23,6 +23,7 @@ ELECTRON_MIRROR="https://cdn.npm.taobao.org/dist/electron/"
 ## 新增更新
 
 * 2020/2/4新增: `prop-types`进行对组件`props`的类型检查，示例参考`/src/components/ComponentsName.js`
+* 2020/2/5新增: `mousetrap`进行对键盘事件的监听，示例参考`/src/App.js`
 
 ## 快速使用
 
