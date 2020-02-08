@@ -9,7 +9,7 @@ import "./App.css"
 let mouseTrap = require("mousetrap")
 
 function App() {
-  // intial为首次启动渲染状态
+  // intial为首次启动渲染状态，避免effect重复执行不必要的代码浪费资源
   const [intial, setIntial] = useState(true)
   useEffect(() => {
     if (intial) {
@@ -32,8 +32,23 @@ function App() {
       console.log("你按下了F1！")
       return false
     })
-    mouseTrap.bind('"', () => {
-      console.log('你按下了"')
+    mouseTrap.bind("f2", () => {
+      // 这里是直接调用electron的api示例项目支持react直接调用electron的api
+      const { BrowserWindow } = window.electron.remote
+      const notice = new Notification("按下F2启动子窗口", {
+        body: "已运行打开bilibili"
+      })
+      notice.onclick = () => {
+        console.log("您点击了通知")
+      }
+      let win = new BrowserWindow({
+        width: 800,
+        height: 600
+      })
+      win.loadURL("https://www.bilibili.com")
+      win.on("closed", () => {
+        console.log("您关闭了子窗口")
+      })
       return false
     })
   }, [intial])
@@ -86,7 +101,8 @@ function App() {
         {/* <ComponentName num={10} /> */}
         {/* 正确用法需要name属性，并且为string类型，num参数可选默认值为零 */}
         <ComponentName name="Hello World" />
-        <Chart width={600} height={400} data={data} scale={cols}>
+        <div>按下F2启动子窗口</div>
+        <Chart width={600} height={400} data={data} scale={cols} style={{ marginTop: "50px" }} >
           <Axis name="genre" title />
           <Axis name="sold" title />
           <Legend position="top" dy={-20} /> <Tooltip />

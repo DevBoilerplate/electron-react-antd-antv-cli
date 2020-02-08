@@ -22,8 +22,9 @@ ELECTRON_MIRROR="https://cdn.npm.taobao.org/dist/electron/"
 
 ## 新增更新
 
-* 2020/2/4新增: `prop-types`进行对组件`props`的类型检查，示例参考`/src/components/ComponentsName.js`
+* 2020/2/8更新: 更新`package.json`中脚本以更好区分开发环境
 * 2020/2/5新增: `mousetrap`进行对键盘事件的监听，示例参考`/src/App.js`
+* 2020/2/4新增: `prop-types`进行对组件`props`的类型检查，示例参考`/src/components/ComponentsName.js`
 
 ## 快速使用
 
@@ -47,20 +48,28 @@ yarn install
 * 验证安装
 
 ```shell
-yarn run dev
+yarn run ele:dev
 ```
 
 ## 关于项目
 
+查看项目从`package.json`开始，项目的`README.md`可能更新不及时
+
 1. 已提供的指令
 
     ```shell
-        "start": "启动react的预览",
-        "build": "构建react的产物",
-        "test":  "react测试",
-        "eject": "react-scripts eject",
-        "dev": "启动electron开发预览"
+        "react:dev": "启动react的预览",
+        "react:build": "构建react的产物",
+        "react:test":  "react测试",
+        "react:eject": "react-scripts eject",
+        "ele:dev": "启动electron开发预览"
         # 下面详述包及自定义配置，目前只针对electron的开发做了脚本
+    ```
+
+    ```shell
+        # 项目启动后在任何时间都可以在命令行输入rs回车使用nodemon强制项目更新
+        rs
+        # Ctrl + c后输入y即可退出命令行启动预览环境
     ```
 
 2. 项目的默认包管理

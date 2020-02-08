@@ -22,11 +22,11 @@
   },
   "main": "main.js",
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test",
-    "eject": "react-scripts eject",
-    "dev": "nodemon --watch main.js --exec concurrently \"wait-on http://localhost:3000 && electron .\" \"cross-env BROWSER=none yarn start\""
+    "react:dev": "react-app-rewired start",
+    "react:build": "react-app-rewired build",
+    "react:test": "react-app-rewired test",
+    "react:eject": "react-scripts eject",
+    "ele:dev": "nodemon --watch main.js --exec concurrently \"wait-on http://localhost:3000 && electron .\" \"cross-env BROWSER=none yarn run react:dev\""
   },
   "eslintConfig": {
     "extends": "react-app"
