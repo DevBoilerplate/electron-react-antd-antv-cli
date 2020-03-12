@@ -42,10 +42,11 @@ git clone https://gitee.com/HerbertHe/electron-react-antd-antv-cli.git
 ```
 
 * 进入仓库
+
 * 下载依赖
 
 ```shell
-yarn install
+yarn
 ```
 
 * 验证安装
