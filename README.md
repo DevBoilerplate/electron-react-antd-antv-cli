@@ -22,12 +22,14 @@ ELECTRON_MIRROR="https://cdn.npm.taobao.org/dist/electron/"
 
 ## 更新记录
 
-* 参考[antd从v3到v4](https://ant.design/docs/react/migration-v4-cn)
-* 2020/2/8更新: 更新`package.json`中脚本以更好区分开发环境
-* 2020/2/5新增: `mousetrap`进行对键盘事件的监听，示例参考`/src/App.js`
-* 2020/2/4新增: `prop-types`进行对组件`props`的类型检查，示例参考`/src/components/ComponentsName.js`
+* 2020/03/12更新: 更新`electron`到`8.1.1`, 更新`antd`到`v4`, 参考[antd从v3到v4](https://ant.design/docs/react/migration-v4-cn)
+* 2020/02/08更新: 更新`package.json`中脚本以更好区分开发环境
+* 2020/02/05新增: `mousetrap`进行对键盘事件的监听，示例参考`/src/App.js`
+* 2020/02/04新增: `prop-types`进行对组件`props`的类型检查，示例参考`/src/components/ComponentsName.js`
 
 ## 快速使用
+
+> 已提供开发工具`Edever`做更便捷的下载管理，请参考文档使用Gitee: [HerbertHe/Edever](https://gitee.com/HerbertHe/Edever), GitHub: [HerbertHe/Edever](https://github.com/HerbertHe/Edever)
 
 * `clone` 仓库
 
