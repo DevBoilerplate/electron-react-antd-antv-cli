@@ -20,8 +20,9 @@ npm config ls
 ELECTRON_MIRROR="https://cdn.npm.taobao.org/dist/electron/"
 ```
 
-## 新增更新
+## 更新记录
 
+* 参考[antd从v3到v4](https://ant.design/docs/react/migration-v4-cn)
 * 2020/2/8更新: 更新`package.json`中脚本以更好区分开发环境
 * 2020/2/5新增: `mousetrap`进行对键盘事件的监听，示例参考`/src/App.js`
 * 2020/2/4新增: `prop-types`进行对组件`props`的类型检查，示例参考`/src/components/ComponentsName.js`
