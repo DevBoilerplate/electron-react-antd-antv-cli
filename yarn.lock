@@ -1039,14 +1039,15 @@
     ajv-keywords "^3.1.0"
 
 "@electron/get@^1.0.1":
-  version "1.7.2"
-  resolved "https://registry.npm.taobao.org/@electron/get/download/@electron/get-1.7.2.tgz#286436a9fb56ff1a1fcdf0e80131fd65f4d1e0fd"
-  integrity sha1-KGQ2qftW/xofzfDoATH9ZfTR4P0=
+  version "1.9.0"
+  resolved "https://registry.npm.taobao.org/@electron/get/download/@electron/get-1.9.0.tgz#7fa6e61d7ff50fb82a8a41f437af7de3b97aa9a5"
+  integrity sha1-f6bmHX/1D7gqikH0N69947l6qaU=
   dependencies:
     debug "^4.1.1"
     env-paths "^2.2.0"
     fs-extra "^8.1.0"
     got "^9.6.0"
+    progress "^2.0.3"
     sanitize-filename "^1.6.2"
     sumchecker "^3.0.1"
   optionalDependencies:
@@ -1533,9 +1534,9 @@
   integrity sha1-lvYG+M1n+wGIR9m2HpOZfave/HI=
 
 "@types/node@^12.0.12":
-  version "12.12.26"
-  resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-12.12.26.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-12.12.26.tgz#213e153babac0ed169d44a6d919501e68f59dea9"
-  integrity sha1-IT4VO6usDtFp1EptkZUB5o9Z3qk=
+  version "12.12.30"
+  resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-12.12.30.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-12.12.30.tgz#3501e6f09b954de9c404671cefdbcc5d9d7c45f6"
+  integrity sha1-NQHm8JuVTenEBGcc79vMXZ18RfY=
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -2621,9 +2622,9 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
 boolean@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npm.taobao.org/boolean/download/boolean-3.0.0.tgz#fab78d5907dbae6216ab46d32733bb7b76b99e76"
-  integrity sha1-+reNWQfbrmIWq0bTJzO7e3a5nnY=
+  version "3.0.1"
+  resolved "https://registry.npm.taobao.org/boolean/download/boolean-3.0.1.tgz?cache=0&sync_timestamp=1581420347794&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fboolean%2Fdownload%2Fboolean-3.0.1.tgz#35ecf2b4a2ee191b0b44986f14eb5f052a5cbb4f"
+  integrity sha1-NezytKLuGRsLRJhvFOtfBSpcu08=
 
 boxen@^1.2.1:
   version "1.3.0"
@@ -3547,7 +3548,7 @@ core-js@^2.4.0:
   resolved "https://registry.npm.taobao.org/core-js/download/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
   integrity sha1-OIMUafmSK97Y7iHJ3EaYXgOZMIw=
 
-core-js@^3.4.1, core-js@^3.5.0:
+core-js@^3.5.0, core-js@^3.6.4:
   version "3.6.4"
   resolved "https://registry.npm.taobao.org/core-js/download/core-js-3.6.4.tgz#440a83536b458114b9cb2ac1580ba377dc470647"
   integrity sha1-RAqDU2tFgRS5yyrBWAujd9xHBkc=
@@ -4437,9 +4438,9 @@ electron-to-chromium@^1.3.341:
   resolved "https://registry.npm.taobao.org/electron-to-chromium/download/electron-to-chromium-1.3.344.tgz?cache=0&sync_timestamp=1580389420913&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Felectron-to-chromium%2Fdownload%2Felectron-to-chromium-1.3.344.tgz#f1397a633c35e726730c24be1084cd25c3ee8148"
   integrity sha1-8Tl6Yzw15yZzDCS+EITNJcPugUg=
 
-electron@8.1.1:
+electron@^8.1.1:
   version "8.1.1"
-  resolved "https://registry.npm.taobao.org/electron/download/electron-8.1.1.tgz?cache=0&sync_timestamp=1583805754952&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Felectron%2Fdownload%2Felectron-8.1.1.tgz#737a5af03c7b4af60b49dff7bfe1203fcbd5bf89"
+  resolved "https://registry.npm.taobao.org/electron/download/electron-8.1.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Felectron%2Fdownload%2Felectron-8.1.1.tgz#737a5af03c7b4af60b49dff7bfe1203fcbd5bf89"
   integrity sha1-c3pa8Dx7SvYLSd/3v+EgP8vVv4k=
   dependencies:
     "@electron/get" "^1.0.1"
@@ -5475,16 +5476,16 @@ glob@^7.0.3, glob@^7.1.1, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4, glob@^7.1.6, gl
     path-is-absolute "^1.0.0"
 
 global-agent@^2.0.2:
-  version "2.1.7"
-  resolved "https://registry.npm.taobao.org/global-agent/download/global-agent-2.1.7.tgz#12d7bc2b07cd862d0fa76b0f1b2c48cd5ffcf150"
-  integrity sha1-Ete8KwfNhi0Pp2sPGyxIzV/88VA=
+  version "2.1.8"
+  resolved "https://registry.npm.taobao.org/global-agent/download/global-agent-2.1.8.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fglobal-agent%2Fdownload%2Fglobal-agent-2.1.8.tgz#99d153662b2c04cbc1199ffbc081a3aa656ac50f"
+  integrity sha1-mdFTZissBMvBGZ/7wIGjqmVqxQ8=
   dependencies:
     boolean "^3.0.0"
-    core-js "^3.4.1"
+    core-js "^3.6.4"
     es6-error "^4.1.1"
-    matcher "^2.0.0"
-    roarr "^2.14.5"
-    semver "^6.3.0"
+    matcher "^2.1.0"
+    roarr "^2.15.2"
+    semver "^7.1.2"
     serialize-error "^5.0.0"
 
 global-dirs@^0.1.0:
@@ -5541,7 +5542,7 @@ globals@^12.1.0:
 
 globalthis@^1.0.1:
   version "1.0.1"
-  resolved "https://registry.npm.taobao.org/globalthis/download/globalthis-1.0.1.tgz?cache=0&sync_timestamp=1577757335498&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fglobalthis%2Fdownload%2Fglobalthis-1.0.1.tgz#40116f5d9c071f9e8fb0037654df1ab3a83b7ef9"
+  resolved "https://registry.npm.taobao.org/globalthis/download/globalthis-1.0.1.tgz?cache=0&sync_timestamp=1577757201256&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fglobalthis%2Fdownload%2Fglobalthis-1.0.1.tgz#40116f5d9c071f9e8fb0037654df1ab3a83b7ef9"
   integrity sha1-QBFvXZwHH56PsAN2VN8as6g7fvk=
   dependencies:
     define-properties "^1.1.3"
@@ -7533,9 +7534,9 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-matcher@^2.0.0:
+matcher@^2.1.0:
   version "2.1.0"
-  resolved "https://registry.npm.taobao.org/matcher/download/matcher-2.1.0.tgz?cache=0&sync_timestamp=1574143092340&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmatcher%2Fdownload%2Fmatcher-2.1.0.tgz#64e1041c15b993e23b786f93320a7474bf833c28"
+  resolved "https://registry.npm.taobao.org/matcher/download/matcher-2.1.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmatcher%2Fdownload%2Fmatcher-2.1.0.tgz#64e1041c15b993e23b786f93320a7474bf833c28"
   integrity sha1-ZOEEHBW5k+I7eG+TMgp0dL+DPCg=
   dependencies:
     escape-string-regexp "^2.0.0"
@@ -9396,7 +9397,7 @@ process@^0.11.10:
   resolved "https://registry.npm.taobao.org/process/download/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha1-czIwDoQBYb2j5podHZGn1LwW8YI=
 
-progress@^2.0.0:
+progress@^2.0.0, progress@^2.0.3:
   version "2.0.3"
   resolved "https://registry.npm.taobao.org/progress/download/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha1-foz42PW48jnBvGi+tOt4Vn1XLvg=
@@ -10640,9 +10641,9 @@ rmc-feedback@^2.0.0:
     babel-runtime "6.x"
     classnames "^2.2.5"
 
-roarr@^2.14.5:
+roarr@^2.15.2:
   version "2.15.2"
-  resolved "https://registry.npm.taobao.org/roarr/download/roarr-2.15.2.tgz?cache=0&sync_timestamp=1580475203179&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Froarr%2Fdownload%2Froarr-2.15.2.tgz#34f6229ae3c8c12167c4ae60f58fe75e79a1e394"
+  resolved "https://registry.npm.taobao.org/roarr/download/roarr-2.15.2.tgz?cache=0&sync_timestamp=1580475216246&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Froarr%2Fdownload%2Froarr-2.15.2.tgz#34f6229ae3c8c12167c4ae60f58fe75e79a1e394"
   integrity sha1-NPYimuPIwSFnxK5g9Y/nXnmh45Q=
   dependencies:
     boolean "^3.0.0"
@@ -10842,7 +10843,7 @@ semver@7.0.0:
   resolved "https://registry.npm.taobao.org/semver/download/semver-7.0.0.tgz?cache=0&sync_timestamp=1580434257623&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsemver%2Fdownload%2Fsemver-7.0.0.tgz#5f3ca35761e47e05b206c6daff2cf814f0316b8e"
   integrity sha1-XzyjV2HkfgWyBsba/yz4FPAxa44=
 
-semver@^7.1.3:
+semver@^7.1.2, semver@^7.1.3:
   version "7.1.3"
   resolved "https://registry.npm.taobao.org/semver/download/semver-7.1.3.tgz#e4345ce73071c53f336445cfc19efb1c311df2a6"
   integrity sha1-5DRc5zBxxT8zZEXPwZ77HDEd8qY=
@@ -11209,7 +11210,7 @@ split-string@^3.0.1, split-string@^3.0.2:
 
 sprintf-js@^1.1.2:
   version "1.1.2"
-  resolved "https://registry.npm.taobao.org/sprintf-js/download/sprintf-js-1.1.2.tgz#da1765262bf8c0f571749f2ad6c26300207ae673"
+  resolved "https://registry.npm.taobao.org/sprintf-js/download/sprintf-js-1.1.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsprintf-js%2Fdownload%2Fsprintf-js-1.1.2.tgz#da1765262bf8c0f571749f2ad6c26300207ae673"
   integrity sha1-2hdlJiv4wPVxdJ8q1sJjACB65nM=
 
 sprintf-js@~1.0.2:

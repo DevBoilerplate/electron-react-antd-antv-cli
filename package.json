@@ -1,10 +1,11 @@
 {
   "name": "electron-react-antd-antv-cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "Herbert He",
     "email": "Herbert.He0229@gmail.com"
   },
+  "description": "A cli-tool makes you develop electron-react soon!",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -65,12 +66,14 @@
     ]
   },
   "main": "./public/electron.js",
+  "homepage": ".",
   "scripts": {
     "react:dev": "react-app-rewired start",
     "react:build": "react-app-rewired build",
     "react:test": "react-app-rewired test",
     "react:eject": "react-scripts eject",
-    "ele:dev": "nodemon --watch ./public/electron.js --exec concurrently \"wait-on http://localhost:3000 && electron .\" \"cross-env BROWSER=none yarn run react:dev\""
+    "ele:dev": "nodemon --watch ./public/electron.js --exec concurrently \"wait-on http://localhost:3000 && electron .\" \"cross-env BROWSER=none yarn run react:dev\"",
+    "build:win64": "yarn react:build && electron-builder --win --x64"
   },
   "eslintConfig": {
     "extends": "react-app"
