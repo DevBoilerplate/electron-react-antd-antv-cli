@@ -1,6 +1,6 @@
 {
   "name": "electron-react-antd-antv-cli",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "author": {
     "name": "Herbert He",
     "email": "Herbert.He0229@gmail.com"
@@ -15,7 +15,6 @@
     "babel-plugin-import": "^1.13.0",
     "bizcharts": "^3.5.6",
     "customize-cra": "^0.9.1",
-    "electron-is-dev": "^1.1.0",
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
     "mousetrap": "^1.6.5",
@@ -26,20 +25,19 @@
     "react-scripts": "3.3.1"
   },
   "build": {
-    "productName": "electron-react-antd-antv-cli",
-    "appId": "cn.jieec.eraac",
-    "copyright": "copyright © Herbert He",
+    "productName": "项目名",
+    "appId": "com.xxx.xxx包名",
+    "copyright": "版权声明",
     "directories": {
       "output": "dist"
     },
     "win": {
-      "icon": "build/logo512.png",
+      "icon": "应用程序图标路径",
+      "legalTrademarks": "商标",
       "target": [
         {
           "target": "nsis",
-          "arch": [
-            "x64"
-          ]
+          "arch": ["x64", "ia32"]
         }
       ]
     },
@@ -50,17 +48,17 @@
       "oneClick": false,
       "allowElevation": true,
       "allowToChangeInstallationDirectory": true,
-      "installerIcon": "build/favicon.ico",
-      "uninstallerIcon": "build/favicon.ico",
-      "installerHeaderIcon": "build/favicon.ico",
+      "installerIcon": "安装图标，相对于build文件夹相对路径的安装图标",
+      "uninstallerIcon": "卸载图标，相对于build文件夹相对路径的卸载图标",
+      "installerHeaderIcon": "安装时头部图标，路径同上",
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "Eraac"
+      "shortcutName": "快捷方式名称"
     },
-    "publish": [
+    "publish" : [
       {
-        "provider": "github",
-        "url": "https://github.com"
+        "provider": "服务器提供商",
+        "url": "服务器地址http://xxxx"
       }
     ]
   },
@@ -93,6 +91,7 @@
     "devtron": "^1.4.0",
     "electron": "8.1.1",
     "electron-builder": "^22.4.1",
+    "electron-is-dev": "^1.1.0",
     "nodemon": "^2.0.2",
     "wait-on": "^4.0.0"
   }
