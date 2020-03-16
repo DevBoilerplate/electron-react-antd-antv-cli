@@ -2,6 +2,8 @@
 
 一个集成electron、react、antd、antv的开发脚手架，便于快速搭建基于react开发的electron桌面应用
 
+> EdeverClient可视化客户端便于更好的获取脚手架更新动态, 基于`electron-react-antd-antv-cli`构建! GitHub: [HerbertHe/EdeverClient](https://github.com/HerbertHe/EdeverClient/releases), Gitee: [HerbertHe/EdeverClient](https://gitee.com/HerbertHe/EdeverClient/releases)
+
 ## 环境依赖
 
 * nodejs [未安装可参考](https://herberthe.gitee.io/2020/01/26/Nodejs%E5%AE%89%E8%A3%85%E8%8B%A5%E5%B9%B2%E9%97%AE%E9%A2%98%E9%81%BF%E5%9D%91/)
@@ -23,6 +25,7 @@ ELECTRON_MIRROR="https://cdn.npm.taobao.org/dist/electron/"
 
 ## 更新记录
 
+* 2020/03/16更新: 新增`.yarnclean`文件对依赖不必要的代码进行清理，缩小打包文件体积
 * 2020/03/13更新: 引入`electron-builder`进行项目打包并且为打包配置了环境`windows only`，示例文件为`package.json`，模板文件为`package.json.bak`，并且修改了模板工程结构`main.js --> public/electron.js`(参考[#2404](https://github.com/electron-userland/electron-builder/issues/2404))，下面会详解打包原理和debug
 * 2020/03/12更新: 更新`electron`到`8.1.1`, 更新`antd`到`v4`, 参考[antd从v3到v4](https://ant.design/docs/react/migration-v4-cn)
 * 2020/02/08更新: 更新`package.json`中脚本以更好区分开发环境
@@ -102,8 +105,15 @@ yarn run ele:dev
     * 如何使用？我这个项目你直接跑就可以了`yarn build:win64`
     * 配置文件参考官方文档[electron-builder](https://www.electron.build/configuration/configuration)
 
+## 打包优化建议
+
+* 不要再使用`双package.json`的方案，`electron v8.x`之后将不再支持，并且打包会报错
+* 如果`dist`(输出)文件夹存在，请在打包之前删掉文件夹
+* 使用`yarn autoclean --force`命令清除依赖的不必要文件
+
 ## 打包及debug参考文章
 
+* [Electron 打包优化 - 从 393MB 到 161MB](https://cloud.tencent.com/developer/article/1547891)
 * [electron-builder打包的基础设置和常见问题](https://github.com/QDMarkMan/CodeBlog/blob/master/Electron/electron-builder%E6%89%93%E5%8C%85%E8%AF%A6%E8%A7%A3.md)
 * [国内electron-vue build报错解决方法](https://juejin.im/post/5d102497e51d4556be5b3a74)
 * [Error: Application entry file "build/electron.js" in the "\<path\>/dist/mac/\<app-name\>/Contents/Resources/app.asar" does not exist. #2404](https://github.com/electron-userland/electron-builder/issues/2404)
