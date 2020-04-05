@@ -1,6 +1,6 @@
 {
   "name": "electron-react-antd-antv-cli",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "author": {
     "name": "Herbert He",
     "email": "Herbert.He0229@gmail.com"
@@ -119,7 +119,7 @@
     "concurrently": "^5.1.0",
     "cross-env": "^7.0.0",
     "devtron": "^1.4.0",
-    "electron": "8.1.1",
+    "electron": "8.2.0",
     "electron-builder": "^22.4.1",
     "nodemon": "^2.0.2",
     "wait-on": "^4.0.0"
