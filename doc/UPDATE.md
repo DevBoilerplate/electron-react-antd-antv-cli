@@ -1,5 +1,6 @@
 # 更新日志
 
+* 2020/04/05更新: `electron`更新到`8.2.0`, 版本信息请查看[release](https://www.electronjs.org/releases/stable)
 * 2020/03/17更新: 引入`electron-updater`配置自动更新，新增`dev-app-update.yml`对于开发环境获取自动更新配置，删除`package.json.bak`模板文件，请参考`package.json`修改
 * 2020/03/16更新: 新增`.yarnclean`文件对依赖不必要的代码进行清理，缩小打包文件体积
 * 2020/03/13更新: 引入`electron-builder`进行项目打包并且为打包配置了环境`windows only`，示例文件为`package.json`，模板文件为`package.json.bak`，并且修改了模板工程结构`main.js --> public/electron.js`(参考[#2404](https://github.com/electron-userland/electron-builder/issues/2404))，下面会详解打包原理和debug
