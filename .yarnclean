@@ -1,7 +1,8 @@
 # test directories
 __tests__
-test
 tests
+# 下面的文件夹会跟craco冲突，参考https://github.com/gsoft-inc/craco/issues/158，提前注释一下，新版移除
+# test
 powered-test
 
 # asset directories
