@@ -1,6 +1,6 @@
 {
   "name": "electron-react-antd-antv-cli",
-  "version": "0.2.0",
+  "version": "0.3.1",
   "author": {
     "name": "Herbert He",
     "email": "Herbert.He0229@gmail.com"
@@ -8,22 +8,18 @@
   "description": "A cli-tool makes you develop electron-react soon!",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^5.6.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "antd": "^4.0.0",
-    "antd-dayjs-webpack-plugin": "^0.0.8",
-    "babel-plugin-import": "^1.13.0",
-    "bizcharts": "^3.5.6",
-    "customize-cra": "^0.9.1",
+    "antd": "^4.2.3",
+    "bizcharts": "^4.0.3",
+    "craco-less": "^1.16.0",
     "electron-is-dev": "^1.1.0",
     "electron-updater": "^4.2.5",
-    "less": "^3.10.3",
-    "less-loader": "^5.0.0",
     "mousetrap": "^1.6.5",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
-    "react-app-rewired": "^2.1.5",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.1"
   },
@@ -93,9 +89,9 @@
   "main": "./public/electron.js",
   "homepage": ".",
   "scripts": {
-    "react:dev": "react-app-rewired start",
-    "react:build": "react-app-rewired build",
-    "react:test": "react-app-rewired test",
+    "react:dev": "craco start",
+    "react:build": "craco build",
+    "react:test": "craco test",
     "react:eject": "react-scripts eject",
     "ele:dev": "nodemon --watch ./public/electron.js --exec concurrently \"wait-on http://localhost:3000 && electron .\" \"cross-env BROWSER=none yarn run react:dev\"",
     "build:win64": "yarn react:build && electron-builder --win --x64"
@@ -119,7 +115,7 @@
     "concurrently": "^5.1.0",
     "cross-env": "^7.0.0",
     "devtron": "^1.4.0",
-    "electron": "8.2.0",
+    "electron": "8.3.0",
     "electron-builder": "^22.4.1",
     "nodemon": "^2.0.2",
     "wait-on": "^4.0.0"
